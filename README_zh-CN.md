@@ -4,7 +4,39 @@
 
 用低价 API 做三页咖啡主题演示：**7 张真实图片、两份三页图片 PPT、一份加可编辑标题的副本，以及 1 条独立 4 秒图生视频**。2026-10-13 实测，图片消费 **$0.0526**，视频 **$0.0408**，本项目合计 **$0.0934（18.68 积分）**。
 
+## 演示
+
 ![Cover](screenshots/cn/01-cover.png)
+
+## 视频演示
+
+下方动态预览来自本次真实生成的咖啡视频。点击观看原始 MP4：
+
+[![4秒真实图生视频演示](assets/coffee-motion-preview.gif)](assets/coffee-motion.mp4)
+
+**[打开视频](https://github.com/ToAPIs-2025/cheaper-banana-slides-toapis/blob/main/assets/coffee-motion.mp4)** · [下载原始 MP4](https://raw.githubusercontent.com/ToAPIs-2025/cheaper-banana-slides-toapis/main/assets/coffee-motion.mp4) · [完整演示与复用入口](DEMO_zh-CN.md)
+
+用已生成的咖啡图片作为首帧，独立 Grok Video 1.5 脚本生成；消费 **8.16积分=$0.0408**。这是生成结果展示；产品操作录屏尚未制作。不是 Banana Slides 原生视频功能验收。
+
+### 生成参数与实际消费
+
+```json
+{
+  "model": "grok-video-1.5",
+  "prompt": "A calm premium coffee product film. Very slow camera push-in, delicate natural steam drifting above the ivory espresso cup, subtle warm light movement. Keep the cup and studio composition recognizable. No new objects, no text, no logos.",
+  "video_generation_mode": "first_frame_image_to_video",
+  "duration": 4,
+  "resolution": "480p",
+  "aspect_ratio": "16:9",
+  "image": "<uploaded-reference-url-omitted>"
+}
+```
+
+`image` 为上传 [vip-low-01.png](assets/vip-low-01.png) 后返回的 URL；公开材料省略临时上传地址。请求档位为480p、16:9、4秒；实际文件为736×400、4.04秒。
+
+**实际消费：8.16积分 × $0.005/积分 = $0.0408。** 后台任务日志由账号持有人提供，API billing仍为空；来源见[消费记录](evidence/actual-costs.json)。
+
+
 
 “更便宜”对比：VIP low / 1K **$0.0019/张**；标准 / 1K **$0.015/张**，本次报价低约 87.3%。画质档位与通道不同，请自己比较效果。[完整价表](PRICING_zh-CN.md) · [逐项实际消费](COSTS_zh-CN.md)。
 

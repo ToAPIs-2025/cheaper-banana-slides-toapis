@@ -4,7 +4,39 @@
 
 Build a three-slide coffee story with a lower-cost image route: **7 real images, two three-slide image PPTX files, a copy with editable captions, and one independent 4-second image-to-video clip**. Tested 2026-10-13. Actual image charges **$0.0526**, video **$0.0408**; this project total **$0.0934 (18.68 credits)**.
 
+## Demo
+
 ![Cover](screenshots/en/01-cover.png)
+
+## Video demo
+
+This animated preview is extracted from our real generated coffee clip. Click to view the original MP4:
+
+[![Real 4-second image-to-video demo](assets/coffee-motion-preview.gif)](assets/coffee-motion.mp4)
+
+**[Watch the video](https://github.com/ToAPIs-2025/cheaper-banana-slides-toapis/blob/main/assets/coffee-motion.mp4)** · [Download original MP4](https://raw.githubusercontent.com/ToAPIs-2025/cheaper-banana-slides-toapis/main/assets/coffee-motion.mp4) · [Full demo and reuse guide](DEMO.md)
+
+A generated coffee image becomes the first frame for the separate Grok Video 1.5 helper. Actual charge: **8.16 credits=$0.0408**. This is an output demo; an application walkthrough recording has not been made. Native Banana Slides video support is not validated.
+
+### Generation parameters and actual charge
+
+```json
+{
+  "model": "grok-video-1.5",
+  "prompt": "A calm premium coffee product film. Very slow camera push-in, delicate natural steam drifting above the ivory espresso cup, subtle warm light movement. Keep the cup and studio composition recognizable. No new objects, no text, no logos.",
+  "video_generation_mode": "first_frame_image_to_video",
+  "duration": 4,
+  "resolution": "480p",
+  "aspect_ratio": "16:9",
+  "image": "<uploaded-reference-url-omitted>"
+}
+```
+
+`image` is the URL returned after uploading [vip-low-01.png](assets/vip-low-01.png); the temporary upload URL is omitted here. Requested tier: 480p, 16:9, 4 seconds. Actual file: 736×400, 4.04 seconds.
+
+**Actual charge: 8.16 credits × $0.005/credit = $0.0408.** Confirmed from the account-owner-provided Task Logs screenshot; API billing remains absent. [Charge provenance](evidence/actual-costs.json).
+
+
 
 “Cheaper” comparison: VIP low / 1K **$0.0019/image** versus standard / 1K **$0.015/image**, approximately 87.3% lower quoted rate in this test. Different quality settings and routes; compare the outputs yourself. [Price table](PRICING.md) · [Itemized actual charges](COSTS.md).
 
