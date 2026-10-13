@@ -1,0 +1,47 @@
+{
+  "state": "completed",
+  "task_id": "tsk_vid_01M4SHF8EMK7TVWZKBBE5BTM6P",
+  "request": {
+    "model": "grok-video-1.5",
+    "prompt": "A calm premium coffee product film. Very slow camera push-in, delicate natural steam drifting above the ivory espresso cup, subtle warm light movement. Keep the cup and studio composition recognizable. No new objects, no text, no logos.",
+    "video_generation_mode": "first_frame_image_to_video",
+    "duration": 4,
+    "resolution": "480p",
+    "aspect_ratio": "16:9",
+    "image": "<uploaded-reference-url-omitted>"
+  },
+  "input_sha256": "1163e72681fbb36ab2c0597b5dcd288c455444099bc131dd3fb55d09bf91fc6c",
+  "quoteUSD": 0.0408,
+  "actualCharge": null,
+  "checkedDate": "2026-10-13",
+  "scope": "independent helper; neither upstream app video integration nor audio validation",
+  "elapsed_seconds": 25.67,
+  "sha256": "88f8456bb3735b4b65985ac60bac96e33ece0e0f88d56424ae7a8c144c149e64",
+  "billing": null,
+  "billing_recheck": {
+    "project": "BananaSlides",
+    "task_id": "tsk_vid_01M4SHF8EMK7TVWZKBBE5BTM6P",
+    "status": "completed",
+    "billing": null,
+    "checkedDate": "2026-10-13",
+    "http": 200
+  },
+  "actual_cost_usd": "0.04080",
+  "actual_charge": {
+    "case": "coffee-motion",
+    "task_id": "tsk_vid_01M4SHF8EMK7TVWZKBBE5BTM6P",
+    "model": "grok-video-1.5",
+    "credits": "8.16",
+    "cost_usd": "0.04080",
+    "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+    "checkedDate": "2026-10-13",
+    "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+    "api_billing": null
+  },
+  "output_metadata": {
+    "duration_seconds": 4.041667,
+    "width": 736,
+    "height": 400,
+    "checkedBy": "local browser video metadata and middle-frame visual inspection"
+  }
+}

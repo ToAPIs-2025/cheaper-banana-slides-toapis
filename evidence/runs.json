@@ -1,0 +1,320 @@
+[
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "standard-01",
+      "route": "standard",
+      "model": "gpt-image-2",
+      "quality": null,
+      "ratio": "16:9",
+      "title": "Brand story",
+      "prompt": "A wide editorial presentation background for a fictional small-batch coffee brand. A matte ivory ceramic espresso cup on pale travertine at the right third, subtle coffee steam, burnt orange and charcoal geometric accents, generous clean blank space on the left for an editable title. Warm natural morning light, premium tactile paper texture, elegant minimal visual hierarchy. No text, no logo, no watermark, no invented statistics."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+    "elapsed_seconds": 110.58,
+    "pixels": [
+      1672,
+      941
+    ],
+    "output_sha256": "9babe82ed865d6544ee30d2454a2d769b33247f21a86877d29db0e2a507c9a12",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.015",
+    "actual_charge": {
+      "case": "standard-01",
+      "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+      "model": "gpt-image-2",
+      "credits": "3",
+      "cost_usd": "0.015",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "standard-02",
+      "route": "standard",
+      "model": "gpt-image-2",
+      "quality": null,
+      "ratio": "16:9",
+      "title": "Roast and craft",
+      "prompt": "A wide editorial presentation background about artisan coffee roasting. A close-up arrangement of coffee beans, a kraft paper coffee bag without labels and a small brass scoop on the right half. Burnt orange, warm cream and charcoal brand palette, soft side light, generous blank left third for editable content. Cohesive premium magazine photography, no text, no logos, no numbers."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGSSK5TB2J3WKASN80V4FH",
+    "elapsed_seconds": 82.45,
+    "pixels": [
+      1696,
+      960
+    ],
+    "output_sha256": "a3ca8ac3160d38e213a38612b1a100767e62da1f378a8b52c13192d889964a3a",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGSSK5TB2J3WKASN80V4FH",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.015",
+    "actual_charge": {
+      "case": "standard-02",
+      "task_id": "tsk_img_01M4SGSSK5TB2J3WKASN80V4FH",
+      "model": "gpt-image-2",
+      "credits": "3",
+      "cost_usd": "0.015",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "standard-03",
+      "route": "standard",
+      "model": "gpt-image-2",
+      "quality": null,
+      "ratio": "16:9",
+      "title": "Community space",
+      "prompt": "A wide editorial presentation background for a fictional coffee community. A sunlit minimal cafe table by a window, one unbranded cream ceramic cup and a closed kraft notebook on the right. Burnt orange detail, charcoal shadows, warm paper palette, clean left space for an editable call to action. Premium architectural photography, no people, no text, no brand marks, no watermark."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGWA53JED9KCH9QFJ402F5",
+    "elapsed_seconds": 41.75,
+    "pixels": [
+      1376,
+      768
+    ],
+    "output_sha256": "63c0f979e15e35b5c3b6a3a196bed80d17c34c877490218c0074a21e8941aac7",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGWA53JED9KCH9QFJ402F5",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.015",
+    "actual_charge": {
+      "case": "standard-03",
+      "task_id": "tsk_img_01M4SGWA53JED9KCH9QFJ402F5",
+      "model": "gpt-image-2",
+      "credits": "3",
+      "cost_usd": "0.015",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "vip-low-01",
+      "route": "vip-low",
+      "model": "gpt-image-2-vip",
+      "quality": "low",
+      "ratio": "16:9",
+      "title": "Brand story",
+      "prompt": "A wide editorial presentation background for a fictional small-batch coffee brand. A matte ivory ceramic espresso cup on pale travertine at the right third, subtle coffee steam, burnt orange and charcoal geometric accents, generous clean blank space on the left for an editable title. Warm natural morning light, premium tactile paper texture, elegant minimal visual hierarchy. No text, no logo, no watermark, no invented statistics."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGHJ4C6V9W15F153J8EQKW",
+    "elapsed_seconds": 35.31,
+    "pixels": [
+      1536,
+      864
+    ],
+    "output_sha256": "1163e72681fbb36ab2c0597b5dcd288c455444099bc131dd3fb55d09bf91fc6c",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGHJ4C6V9W15F153J8EQKW",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.00190",
+    "actual_charge": {
+      "case": "vip-low-01",
+      "task_id": "tsk_img_01M4SGHJ4C6V9W15F153J8EQKW",
+      "model": "gpt-image-2-vip",
+      "credits": "0.38",
+      "cost_usd": "0.00190",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "vip-low-02",
+      "route": "vip-low",
+      "model": "gpt-image-2-vip",
+      "quality": "low",
+      "ratio": "16:9",
+      "title": "Roast and craft",
+      "prompt": "A wide editorial presentation background about artisan coffee roasting. A close-up arrangement of coffee beans, a kraft paper coffee bag without labels and a small brass scoop on the right half. Burnt orange, warm cream and charcoal brand palette, soft side light, generous blank left third for editable content. Cohesive premium magazine photography, no text, no logos, no numbers."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGXJW0P9XBBJDVHZVDC68Q",
+    "elapsed_seconds": 26.17,
+    "pixels": [
+      1536,
+      864
+    ],
+    "output_sha256": "77a8dbb78f75d545b7ad431896cbbbde3633627bb84e0a2044ee254f332369ce",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGXJW0P9XBBJDVHZVDC68Q",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.00190",
+    "actual_charge": {
+      "case": "vip-low-02",
+      "task_id": "tsk_img_01M4SGXJW0P9XBBJDVHZVDC68Q",
+      "model": "gpt-image-2-vip",
+      "credits": "0.38",
+      "cost_usd": "0.00190",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "vip-low-03",
+      "route": "vip-low",
+      "model": "gpt-image-2-vip",
+      "quality": "low",
+      "ratio": "16:9",
+      "title": "Community space",
+      "prompt": "A wide editorial presentation background for a fictional coffee community. A sunlit minimal cafe table by a window, one unbranded cream ceramic cup and a closed kraft notebook on the right. Burnt orange detail, charcoal shadows, warm paper palette, clean left space for an editable call to action. Premium architectural photography, no people, no text, no brand marks, no watermark."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+    "elapsed_seconds": 34.91,
+    "pixels": [
+      1536,
+      864
+    ],
+    "output_sha256": "dbe68e0ba39721b2bfdf999a53e8c3537ae704e9aabdcd0c028c89affe0a9213",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.00190",
+    "actual_charge": {
+      "case": "vip-low-03",
+      "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+      "model": "gpt-image-2-vip",
+      "credits": "0.38",
+      "cost_usd": "0.00190",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  },
+  {
+    "project": "Anionex/banana-slides",
+    "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+    "checkedDate": "2026-10-13",
+    "case": {
+      "id": "vip-low-reference-edit",
+      "route": "reference-edit",
+      "model": "gpt-image-2-vip",
+      "quality": "low",
+      "ratio": "16:9",
+      "title": "Reuse a slide reference",
+      "references": [
+        "vip-low-01/result.png"
+      ],
+      "prompt": "Keep the ivory ceramic espresso cup and recognizable product framing from the reference image. Change the scene from pale studio light to a warm charcoal evening coffee-bar setting, restrained burnt-orange rim light, generous clean blank area on the left for an editable title. One cup, commercial editorial photography, no text, no logos, no new objects or invented statistics."
+    },
+    "status": "completed",
+    "task_id": "tsk_img_01M4SH6EGQPVD5DC8MKCEC5G1E",
+    "elapsed_seconds": 44.22,
+    "pixels": [
+      1536,
+      864
+    ],
+    "output_sha256": "0c6001ffa9822aa80672b31abb37db04bf37761d511855e21aeeb18c174f4c5c",
+    "billing": null,
+    "method": "patched upstream OpenAIImageProvider.generate_image",
+    "scope": "backend provider; frontend not tested",
+    "billing_recheck": {
+      "project": "BananaSlides",
+      "task_id": "tsk_img_01M4SH6EGQPVD5DC8MKCEC5G1E",
+      "status": "completed",
+      "billing": null,
+      "checkedDate": "2026-10-13",
+      "http": 200
+    },
+    "actual_cost_usd": "0.00190",
+    "actual_charge": {
+      "case": "vip-low-reference-edit",
+      "task_id": "tsk_img_01M4SH6EGQPVD5DC8MKCEC5G1E",
+      "model": "gpt-image-2-vip",
+      "credits": "0.38",
+      "cost_usd": "0.00190",
+      "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+      "checkedDate": "2026-10-13",
+      "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+      "api_billing": null
+    }
+  }
+]

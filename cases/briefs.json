@@ -1,0 +1,68 @@
+[
+  {
+    "id": "standard-01",
+    "route": "standard",
+    "model": "gpt-image-2",
+    "quality": null,
+    "ratio": "16:9",
+    "title": "Brand story",
+    "prompt": "A wide editorial presentation background for a fictional small-batch coffee brand. A matte ivory ceramic espresso cup on pale travertine at the right third, subtle coffee steam, burnt orange and charcoal geometric accents, generous clean blank space on the left for an editable title. Warm natural morning light, premium tactile paper texture, elegant minimal visual hierarchy. No text, no logo, no watermark, no invented statistics."
+  },
+  {
+    "id": "standard-02",
+    "route": "standard",
+    "model": "gpt-image-2",
+    "quality": null,
+    "ratio": "16:9",
+    "title": "Roast and craft",
+    "prompt": "A wide editorial presentation background about artisan coffee roasting. A close-up arrangement of coffee beans, a kraft paper coffee bag without labels and a small brass scoop on the right half. Burnt orange, warm cream and charcoal brand palette, soft side light, generous blank left third for editable content. Cohesive premium magazine photography, no text, no logos, no numbers."
+  },
+  {
+    "id": "standard-03",
+    "route": "standard",
+    "model": "gpt-image-2",
+    "quality": null,
+    "ratio": "16:9",
+    "title": "Community space",
+    "prompt": "A wide editorial presentation background for a fictional coffee community. A sunlit minimal cafe table by a window, one unbranded cream ceramic cup and a closed kraft notebook on the right. Burnt orange detail, charcoal shadows, warm paper palette, clean left space for an editable call to action. Premium architectural photography, no people, no text, no brand marks, no watermark."
+  },
+  {
+    "id": "vip-low-01",
+    "route": "vip-low",
+    "model": "gpt-image-2-vip",
+    "quality": "low",
+    "ratio": "16:9",
+    "title": "Brand story",
+    "prompt": "A wide editorial presentation background for a fictional small-batch coffee brand. A matte ivory ceramic espresso cup on pale travertine at the right third, subtle coffee steam, burnt orange and charcoal geometric accents, generous clean blank space on the left for an editable title. Warm natural morning light, premium tactile paper texture, elegant minimal visual hierarchy. No text, no logo, no watermark, no invented statistics."
+  },
+  {
+    "id": "vip-low-02",
+    "route": "vip-low",
+    "model": "gpt-image-2-vip",
+    "quality": "low",
+    "ratio": "16:9",
+    "title": "Roast and craft",
+    "prompt": "A wide editorial presentation background about artisan coffee roasting. A close-up arrangement of coffee beans, a kraft paper coffee bag without labels and a small brass scoop on the right half. Burnt orange, warm cream and charcoal brand palette, soft side light, generous blank left third for editable content. Cohesive premium magazine photography, no text, no logos, no numbers."
+  },
+  {
+    "id": "vip-low-03",
+    "route": "vip-low",
+    "model": "gpt-image-2-vip",
+    "quality": "low",
+    "ratio": "16:9",
+    "title": "Community space",
+    "prompt": "A wide editorial presentation background for a fictional coffee community. A sunlit minimal cafe table by a window, one unbranded cream ceramic cup and a closed kraft notebook on the right. Burnt orange detail, charcoal shadows, warm paper palette, clean left space for an editable call to action. Premium architectural photography, no people, no text, no brand marks, no watermark."
+  },
+  {
+    "id": "vip-low-reference-edit",
+    "route": "reference-edit",
+    "model": "gpt-image-2-vip",
+    "quality": "low",
+    "ratio": "16:9",
+    "title": "Reuse a slide reference",
+    "references": [
+      "vip-low-01/result.png"
+    ],
+    "prompt": "Keep the ivory ceramic espresso cup and recognizable product framing from the reference image. Change the scene from pale studio light to a warm charcoal evening coffee-bar setting, restrained burnt-orange rim light, generous clean blank area on the left for an editable title. One cup, commercial editorial photography, no text, no logos, no new objects or invented statistics."
+  }
+]

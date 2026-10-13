@@ -1,2 +1,69 @@
-# cheaper-banana-slides-toapis
-更便宜的 Banana Slides 图片方案 | Cheaper images with ToAPIs VIP low, async patch, bilingual tutorials, real outputs and actual charges.
+# Cheaper Banana Slides images · ToAPIs low-cost API
+
+[English](README.md) · [简体中文](README_zh-CN.md) · [Pricing](PRICING.md) · [Actual charges](COSTS.md) · [Real outputs](GALLERY.md)
+
+Build a three-slide coffee story with a lower-cost image route: **7 real images, two three-slide image PPTX files, a copy with editable captions, and one independent 4-second image-to-video clip**. Tested 2026-10-13. Actual image charges **$0.0526**, video **$0.0408**; this project total **$0.0934 (18.68 credits)**.
+
+![Cover](screenshots/en/01-cover.png)
+
+“Cheaper” comparison: VIP low / 1K **$0.0019/image** versus standard / 1K **$0.015/image**, approximately 87.3% lower quoted rate in this test. Different quality settings and routes; compare the outputs yourself. [Price table](PRICING.md) · [Itemized actual charges](COSTS.md).
+
+## Reproduce the test
+
+Python 3.12 and Git; tested with openai 3.29.0 and Pillow 12.3.0. This is a community integration tutorial and minimal patch, not an official upstream low-cost edition or evidence of a partnership. Install the full application using upstream instructions; the commands here reproduce the backend provider and image export only.
+
+```bash
+git clone https://github.com/ToAPIs-2025/cheaper-banana-slides-toapis.git
+git clone https://github.com/Anionex/banana-slides.git banana-upstream
+git -C banana-upstream checkout 8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7
+cd cheaper-banana-slides-toapis
+git -C ../banana-upstream apply ../cheaper-banana-slides-toapis/adapter.patch
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements-demo.txt
+cp .env.example .env
+# Fill TOAPIS_API_KEY privately. Windows PowerShell: Copy-Item .env.example .env
+python run_cases.py --upstream ../banana-upstream
+python tests/test_adapter.py --upstream ../banana-upstream
+python run_cases.py --upstream ../banana-upstream --key-file .env --live --case vip-low-01
+python run_cases.py --upstream ../banana-upstream --key-file .env --live
+```
+
+The default command makes no API call. `--live` generates paid images; the first live command generates just one. All 7 image cases cost an estimated $0.0526 at the listed rates. Reference editing depends on vip-low-01. Completed evidence is reused in the same output folder. Keep private-state receipts; reconcile a missing task ID with Task Logs instead of automatically resubmitting.
+
+## Adapter and reuse improvements
+
+Pinned upstream SHA: `8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7`. The patch adds ToAPIs routing to `backend/services/ai_providers/image/openai_provider.py` and a new `toapis_image_provider.py`. The existing synchronous OpenAI path cannot consume the async task ID directly; the adapter performs:
+
+1. `Authorization: Bearer TOAPIS_API_KEY`; `https://toapis.cn` or `https://toapis.com`, origin or `/v1` normalized once.
+2. `POST /v1/uploads/images` for PNG references, then `reference_images: [URL]`.
+3. `POST /v1/images/generations`: exact model, prompt, n=1, size=`16:9`, resolution=`1K`; VIP low adds quality=`low`, standard omits quality.
+4. Persist task ID; `GET /v1/images/generations/{id}` every 8 seconds, up to 600 seconds.
+5. Download `result.data[0].url` without API Key, return a PIL image to the real upstream provider.
+
+Improvements: durable pre-submission state, no duplicate generation POST, retained failed task IDs, completed-result reuse and downloads without credentials. Five offline tests cover these cases. The adapter validates 1K/2K/4K parameters, but only 1K was tested live; actual pixel sizes differ, as listed in [evidence](EVIDENCE.md). Full frontend settings are unverified. The existing IMAGE_MODEL_SOURCE=openai route and ToAPIs image base can be used for a later product-level check.
+
+## Reuse outputs without another generation
+
+```bash
+python run_cases.py --upstream ../banana-upstream --output results --export-only
+python extras/native_titles.py results/vip-low-three-slides.pptx --output results/vip-low-native-captions.pptx
+```
+
+The real upstream ExportService.create_pptx_from_images exported both three-image sequences; each was reopened and confirmed to have three slides. These are image-mode PPTX files. Only the three caption boxes added by the separate helper are editable. The full upstream OCR/native editable-export path was not tested. Download [standard PPTX](assets/standard-three-slides.pptx), [low-cost PPTX](assets/vip-low-three-slides.pptx) or [editable-caption copy](assets/vip-low-native-captions.pptx).
+
+## Optional: turn the image into a 4-second clip
+
+```bash
+python extras/video_extension.py --input assets/vip-low-01.png
+python extras/video_extension.py --input assets/vip-low-01.png --key-file .env --live
+```
+
+This is a separate script, not native Banana Slides video support. Exact model grok-video-1.5, first_frame_image_to_video, 4 seconds, 480p, 16:9. Actual charge: 8.16 credits=$0.0408. The helper checks the matching rate and its independent $1 safety cap before submitting. It uploads the image, submits a video task, polls and downloads an MP4. [Real clip](assets/coffee-motion.mp4) · [Request and hash](evidence/video-extension.json). Requested 480p; actual output is 736×400 and 4.04 seconds. Audio was not validated.
+
+## Upstream and license
+
+[Anionex/banana-slides](https://github.com/Anionex/banana-slides) · [Pinned source](https://github.com/Anionex/banana-slides/tree/8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7) · [AGPL-3.0](LICENSE). Preserve upstream notices when reusing the patch. All product scenes are fictional original prompts; no customer logos or sales figures.
+
+[Explore ToAPIs image API](https://go2v.toapis.com/1013_banana_cheaper_gh_en) · [X screenshot guide](SCREENSHOT_GUIDE.md)

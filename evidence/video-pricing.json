@@ -1,0 +1,18 @@
+{
+  "checkedDate": "2026-10-13",
+  "exactRows": [
+    {
+      "charge_type": "per_second",
+      "conditions": {
+        "duration": "4s",
+        "input_image_count": 1,
+        "resolution": "480p"
+      },
+      "group": "default",
+      "price_basis": "output_seconds",
+      "unit": "second",
+      "unit_price": "0.0102"
+    }
+  ],
+  "estimatedUSD": 0.0408
+}

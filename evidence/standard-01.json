@@ -1,0 +1,45 @@
+{
+  "project": "Anionex/banana-slides",
+  "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+  "checkedDate": "2026-10-13",
+  "case": {
+    "id": "standard-01",
+    "route": "standard",
+    "model": "gpt-image-2",
+    "quality": null,
+    "ratio": "16:9",
+    "title": "Brand story",
+    "prompt": "A wide editorial presentation background for a fictional small-batch coffee brand. A matte ivory ceramic espresso cup on pale travertine at the right third, subtle coffee steam, burnt orange and charcoal geometric accents, generous clean blank space on the left for an editable title. Warm natural morning light, premium tactile paper texture, elegant minimal visual hierarchy. No text, no logo, no watermark, no invented statistics."
+  },
+  "status": "completed",
+  "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+  "elapsed_seconds": 110.58,
+  "pixels": [
+    1672,
+    941
+  ],
+  "output_sha256": "9babe82ed865d6544ee30d2454a2d769b33247f21a86877d29db0e2a507c9a12",
+  "billing": null,
+  "method": "patched upstream OpenAIImageProvider.generate_image",
+  "scope": "backend provider; frontend not tested",
+  "billing_recheck": {
+    "project": "BananaSlides",
+    "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+    "status": "completed",
+    "billing": null,
+    "checkedDate": "2026-10-13",
+    "http": 200
+  },
+  "actual_cost_usd": "0.015",
+  "actual_charge": {
+    "case": "standard-01",
+    "task_id": "tsk_img_01M4SGPDM2GVYJYAGCJ94KGHSA",
+    "model": "gpt-image-2",
+    "credits": "3",
+    "cost_usd": "0.015",
+    "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+    "checkedDate": "2026-10-13",
+    "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+    "api_billing": null
+  }
+}

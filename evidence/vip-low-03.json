@@ -1,0 +1,45 @@
+{
+  "project": "Anionex/banana-slides",
+  "upstream_sha": "8bcde44c95646a863b23b1e4fc43c9a42ea4e3f7",
+  "checkedDate": "2026-10-13",
+  "case": {
+    "id": "vip-low-03",
+    "route": "vip-low",
+    "model": "gpt-image-2-vip",
+    "quality": "low",
+    "ratio": "16:9",
+    "title": "Community space",
+    "prompt": "A wide editorial presentation background for a fictional coffee community. A sunlit minimal cafe table by a window, one unbranded cream ceramic cup and a closed kraft notebook on the right. Burnt orange detail, charcoal shadows, warm paper palette, clean left space for an editable call to action. Premium architectural photography, no people, no text, no brand marks, no watermark."
+  },
+  "status": "completed",
+  "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+  "elapsed_seconds": 34.91,
+  "pixels": [
+    1536,
+    864
+  ],
+  "output_sha256": "dbe68e0ba39721b2bfdf999a53e8c3537ae704e9aabdcd0c028c89affe0a9213",
+  "billing": null,
+  "method": "patched upstream OpenAIImageProvider.generate_image",
+  "scope": "backend provider; frontend not tested",
+  "billing_recheck": {
+    "project": "BananaSlides",
+    "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+    "status": "completed",
+    "billing": null,
+    "checkedDate": "2026-10-13",
+    "http": 200
+  },
+  "actual_cost_usd": "0.00190",
+  "actual_charge": {
+    "case": "vip-low-03",
+    "task_id": "tsk_img_01M4SGYCD0BXVT81WQYVHA75BY",
+    "model": "gpt-image-2-vip",
+    "credits": "0.38",
+    "cost_usd": "0.00190",
+    "source": "User-provided dashboard screenshot; visible task prefix matched to local full task ID",
+    "checkedDate": "2026-10-13",
+    "conversion": "1 credit = USD 0.005 (confirmed by account owner)",
+    "api_billing": null
+  }
+}
